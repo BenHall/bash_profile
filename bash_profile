@@ -3,11 +3,10 @@ alias d="cd ~/Documents"
 alias m="cd ~/SourceControl/meerkatalyst_v3"
 
 # Rails
-alias console='ruby script/console'
-alias server='ruby script/server'
-alias ss='ruby script/server'
-alias c='ruby script/console'
+alias rs='rails server'
+alias rc='rails console'
 alias rk='rake'
+alias bi='bundle install'
 
 # Git
 alias gst='git status'
