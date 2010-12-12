@@ -1,0 +1,2 @@
+Reload profile:
+  . ./.profile
