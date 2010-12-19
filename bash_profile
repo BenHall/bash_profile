@@ -1,6 +1,7 @@
 # Directories
 alias d="cd ~/Documents"
 alias m="cd ~/SourceControl/meerkatalyst_v3"
+alias c="clear"
 
 # Rails
 alias rs='rails server'
