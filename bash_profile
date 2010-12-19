@@ -28,6 +28,9 @@ export PATH=~/.gem/ruby/1.8/bin:$PATH
 export PATH=$JRUBY_HOME/bin/:$JAVA_HOME/bin:$PATH
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/spidermonkey/lib
 
+# Define some colour
+export CLICOLOR=1
+export LSCOLORS=DxGxcxdxCxegedabagacad
 
 # -- start rip config -- #
 RIPDIR=/Users/Ben/.rip
