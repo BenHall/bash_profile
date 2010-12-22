@@ -8,6 +8,7 @@ alias rs='rails server'
 alias rc='rails console'
 alias rk='rake'
 alias bi='bundle install'
+alias wa='watchr w.watcher'
 
 # Git
 alias gst='git status'
