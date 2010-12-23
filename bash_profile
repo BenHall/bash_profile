@@ -11,16 +11,14 @@ alias bi='bundle install'
 alias wa='watchr w.watcher'
 
 # Git
-alias gst='git status'
+alias gs='git status'
+alias gc='git commit -v'
+alias ga='git add'
 alias gb='git branch'
 alias gpo='git push origin'
 alias gph='git push heroku'
-alias gc='git commit -v'
 alias gco='git checkout'
 alias gca='git commit -v -a'
-alias ga='git add'
-
-
 
 # Original profile
 export JRUBY_HOME=~/Library/jruby-1.5.0/
