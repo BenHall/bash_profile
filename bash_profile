@@ -1,6 +1,7 @@
 # Directories
 alias d="cd ~/Documents"
-alias m="cd ~/SourceControl/meerkatalyst_v3"
+alias m="cd ~/SourceControl/meerkatalyst_v4"
+alias e="cd ~/SourceControl/monitoring_et"
 alias c="clear"
 
 # Rails
@@ -10,16 +11,31 @@ alias rk='rake'
 alias bi='bundle install'
 alias wa='watchr w.watcher'
 
+# NodeJS
+alias f='foreman start'
+
 # Git
 alias gs='git status'
 alias gc='git commit -v'
 alias ga='git add'
 alias gb='git branch'
 alias gp='git push'
+alias gl='git pull origin master'
 alias gpo='git push origin'
 alias gph='git push heroku'
 alias gco='git checkout'
 alias gca='git commit -v -a'
+
+# Brew
+export PATH=$PATH:/usr/local/sbin
+
+# Setup Amazon EC2 Command-Line Tools
+export EC2_HOME=~/Development/ec2
+export PATH=$PATH:$EC2_HOME/bin
+export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
+export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
+
+export PATH=$PATH:~/bin
 
 # Original profile
 export JRUBY_HOME=~/Library/jruby-1.5.0/
