@@ -2,6 +2,8 @@
 alias d="cd ~/Documents"
 alias m="cd ~/SourceControl/meerkatalyst_v4"
 alias e="cd ~/SourceControl/monitoring_et"
+alias s="cd ~/SourceControl/socialtv"
+alias si="cd ~/SourceControl/socialtv_api"
 alias c="clear"
 
 # Rails
@@ -25,6 +27,8 @@ alias gpo='git push origin'
 alias gph='git push heroku'
 alias gco='git checkout'
 alias gca='git commit -v -a'
+alias gd='git diff'
+alias gdc='git diff --cached'
 
 # Brew
 export PATH=$PATH:/usr/local/sbin
