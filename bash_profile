@@ -6,6 +6,9 @@ alias s="cd ~/SourceControl/socialtv"
 alias si="cd ~/SourceControl/socialtv_api"
 alias c="clear"
 
+# Apps
+alias v="vim"
+
 # Rails
 alias rs='rails server'
 alias rc='rails console'
