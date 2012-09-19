@@ -37,14 +37,19 @@ alias gdc='git diff --cached'
 
 # Brew
 export PATH=$PATH:/usr/local/sbin
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+# Custom
+export PATH=$PATH:~/bin
 
 # Setup Amazon EC2 Command-Line Tools
-export EC2_HOME=~/Development/ec2
-export PATH=$PATH:$EC2_HOME/bin
-export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
-export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
+#export EC2_HOME=~/Development/ec2
+#export PATH=$PATH:$EC2_HOME/bin
+#export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
+#export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
 
 export PATH=$PATH:~/bin
+export PATH=$PATH:node_modules/.bin/
 
 # Original profile
 export JRUBY_HOME=~/Library/jruby-1.5.0/
