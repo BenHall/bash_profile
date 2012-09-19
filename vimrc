@@ -11,6 +11,9 @@ set autoread
 " Set search highlights
 set hlsearch
 
+" Incremental searching 
+set incsearch
+
 " Show matching brackets when text indicator is over them
 set showmatch
 
@@ -51,3 +54,16 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Remappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Remap jj to Esc
+inoremap jj <Esc>
+
+nnoremap JJJJ <Nop>
+
+" Remap to save fingers
+nore ; :
+nore , ;
