@@ -34,6 +34,7 @@ alias gco='git checkout'
 alias gca='git commit -v -a'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias pu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
 
 # Brew
 export PATH=$PATH:/usr/local/sbin
