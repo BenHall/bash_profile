@@ -29,7 +29,10 @@ set tm=500
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
+call pathogen#infect()
 syntax enable
+syntax on
+filetype plugin indent on
 
 colorscheme desert
 set background=dark

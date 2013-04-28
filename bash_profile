@@ -1,9 +1,5 @@
 # Directories
-alias d="cd ~/Documents"
-alias m="cd ~/SourceControl/meerkatalyst_v4"
-alias e="cd ~/SourceControl/monitoring_et"
-alias s="cd ~/SourceControl/socialtv"
-alias si="cd ~/SourceControl/socialtv_api"
+alias t="cd ~/SourceControl/talent-sourcer"
 alias c="clear"
 
 # Apps
@@ -18,6 +14,7 @@ alias wa='watchr w.watcher'
 
 # NodeJS
 alias f='foreman start'
+alias n='node app.js'
 alias np='npm install'
 
 # Git
@@ -30,6 +27,7 @@ alias gp='git push'
 alias gl='git pull origin master'
 alias gpo='git push origin'
 alias gph='git push heroku'
+alias gpr='git push rackspace'
 alias gco='git checkout'
 alias gca='git commit -v -a'
 alias gd='git diff'
@@ -83,4 +81,5 @@ export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
 export ANT_HOME='/Developer/Java/ant'
 
 export PATH=/Users/Ben/Library/ironruby-0.9.3/bin:$PATH
+export PATH=$PATH:/usr/local/sbin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
