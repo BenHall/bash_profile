@@ -1,6 +1,9 @@
 # Directories
-alias t="cd ~/SourceControl/talent-sourcer"
+alias t="cd ~/SourceCode/talent-sourcer"
 alias c="clear"
+
+#SSH
+alias gssh="history | grep ssh"
 
 # Apps
 alias v="vim"
@@ -34,12 +37,21 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias pu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
 
+alias gitk='gitk 2>/dev/null'
+
+alias todo='git add TODO && git commit -m "TODO"'
+
+alias http='python -m SimpleHTTPServer'
+
 # Brew
 export PATH=$PATH:/usr/local/sbin
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 # Custom
 export PATH=$PATH:~/bin
+
+# PHP
+export PATH=/usr/local/php5/bin:$PATH
 
 # Setup Amazon EC2 Command-Line Tools
 #export EC2_HOME=~/Development/ec2
@@ -49,6 +61,10 @@ export PATH=$PATH:~/bin
 
 export PATH=$PATH:~/bin
 export PATH=$PATH:node_modules/.bin/
+
+# Golang
+export GOPATH=$HOME/Library/Developer/golang/
+export PATH=$PATH:$GOPATH/bin
 
 # Original profile
 export JRUBY_HOME=~/Library/jruby-1.5.0/
