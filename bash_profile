@@ -77,6 +77,11 @@ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/spidermonkey/lib
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 
+# Set Tab Title in iTerm to current directory
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
+
 # -- start rip config -- #
 RIPDIR=/Users/Ben/.rip
 RUBYLIB="$RUBYLIB:$RIPDIR/active/lib"
@@ -92,9 +97,12 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-
 export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
 export ANT_HOME='/Developer/Java/ant'
+
+if [ ! -f ~/.profile_local ]; then
+  . ~/.profile_local
+fi
 
 export PATH=/Users/Ben/Library/ironruby-0.9.3/bin:$PATH
 export PATH=$PATH:/usr/local/sbin
