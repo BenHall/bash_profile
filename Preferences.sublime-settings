@@ -1,0 +1,8 @@
+{
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules"]
+}
