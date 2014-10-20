@@ -35,6 +35,7 @@ alias gco='git checkout'
 alias gca='git commit -v -a'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias gsh='git show --pretty="format:"'
 alias pu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
 
 alias gitk='gitk 2>/dev/null'
@@ -65,6 +66,9 @@ export PATH=$PATH:node_modules/.bin/
 # Golang
 export GOPATH=$HOME/Library/Developer/golang/
 export PATH=$PATH:$GOPATH/bin
+
+# Docker
+alias b2d='/usr/local/bin/boot2docker start && $(/usr/local/bin/boot2docker shellinit); boot2docker ssh "date; sudo ntpd -q -p 0.uk.pool.ntp.org; date"; docker ps;'
 
 # Original profile
 export JRUBY_HOME=~/Library/jruby-1.5.0/
@@ -100,9 +104,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export JAVA_HOME='/System/Library/Frameworks/JavaVM.framework/Home'
 export ANT_HOME='/Developer/Java/ant'
 
-if [ ! -f ~/.profile_local ]; then
-  . ~/.profile_local
-fi
+. ~/.profile_local
 
 export PATH=/Users/Ben/Library/ironruby-0.9.3/bin:$PATH
 export PATH=$PATH:/usr/local/sbin
