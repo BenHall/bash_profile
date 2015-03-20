@@ -113,3 +113,9 @@ alias todo='git add TODO && git commit -m "TODO"'
 
 alias http='python -m SimpleHTTPServer'
 
+# Docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/ben/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+alias b2d='/usr/local/bin/boot2docker start && $(/usr/local/bin/boot2docker shellinit); boot2docker ssh "date; sudo ntpd -q -p 0.uk.pool.ntp.org; date"; docker ps;'
+
