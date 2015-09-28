@@ -19,6 +19,7 @@ alias wa='watchr w.watcher'
 alias f='foreman start'
 alias n='node app.js'
 alias np='npm install'
+alias rr='npm run watch'
 
 # Git
 alias gs='git status'
