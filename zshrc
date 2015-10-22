@@ -114,12 +114,27 @@ alias todo='git add TODO && git commit -m "TODO"'
 
 alias http='python -m SimpleHTTPServer'
 
+# Docker Alias
+alias dc='docker-compose'
+alias dcu='docker-compose up -d'
+alias d='docker'
+
 # Docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/ben/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-alias b2d='/usr/local/bin/boot2docker start && $(/usr/local/bin/boot2docker shellinit); boot2docker ssh "date; sudo ntpd -q -p 0.uk.pool.ntp.org; date"; docker ps;'
+# export DOCKER_HOST=tcp://192.168.59.103:2376
+# export DOCKER_CERT_PATH=/Users/ben/.boot2docker/certs/boot2docker-vm
+# export DOCKER_TLS_VERIFY=1
+# alias b2d='/usr/local/bin/boot2docker start && $(/usr/local/bin/boot2docker shellinit); boot2docker ssh "date; sudo ntpd -q -p 0.uk.pool.ntp.org; date"; docker ps;'
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/ben/.docker/machine/machines/dev"
+export DOCKER_MACHINE_NAME="dev"
 
 # Bin Paths
 export PATH=$PATH:~/bin
 export PATH=$PATH:node_modules/.bin/
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/ben/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/ben/google-cloud-sdk/completion.zsh.inc'
