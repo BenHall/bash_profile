@@ -118,6 +118,7 @@ alias http='python -m SimpleHTTPServer'
 alias dc='docker-compose'
 alias dcu='docker-compose up -d'
 alias d='docker'
+alias dm='docker-machine'
 
 # Docker
 # export DOCKER_HOST=tcp://192.168.59.103:2376
@@ -138,3 +139,6 @@ source '/Users/ben/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/ben/google-cloud-sdk/completion.zsh.inc'
+
+export NVM_DIR="/Users/ben/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
