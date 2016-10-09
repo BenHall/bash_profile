@@ -142,3 +142,4 @@ source '/Users/ben/google-cloud-sdk/completion.zsh.inc'
 
 export NVM_DIR="/Users/ben/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source zsh-autosuggestions/zsh-autosuggestions.zsh
